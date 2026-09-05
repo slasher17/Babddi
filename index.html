@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Babdiii ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:#65283e;background:linear-gradient(145deg,#fff9f6,#ffe7ef);min-height:100vh}
+header{text-align:center;padding:48px 18px 18px}.tag{font:11px Arial;letter-spacing:4px;text-transform:uppercase;color:#9d6073}
+h1{font-size:clamp(44px,10vw,78px);font-weight:500;margin:12px 0 3px}.sub{font-style:italic;font-size:20px}
+.hero{text-align:center;padding:15px 20px 55px}.hero img{width:min(330px,78vw);height:420px;object-fit:cover;border-radius:170px 170px 28px 28px;border:7px solid white;box-shadow:0 25px 60px #65283e40}
+.quote{max-width:650px;margin:28px auto;font-size:21px;line-height:1.7}.btn{border:0;border-radius:999px;background:#65283e;color:white;padding:14px 25px;font-size:16px;cursor:pointer}
+.section{max-width:1050px;margin:auto;padding:0 20px 70px}.section h2{text-align:center;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}.card{background:#fffafd;border:1px solid #e7bdca;border-radius:22px;padding:22px 15px;min-height:160px;text-align:center;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:.25s;box-shadow:0 8px 25px #65283e12}.card:hover{transform:translateY(-7px)}.emoji{font-size:36px}.when{font-size:17px;margin-top:9px}.opened{font:10px Arial;letter-spacing:1px;color:#b07b8d;margin-top:9px}
+.modal{position:fixed;inset:0;background:#2f152299;display:none;align-items:center;justify-content:center;padding:18px;z-index:10}.modal.show{display:flex}.letter{position:relative;background:#fff9f6;width:min(700px,100%);max-height:88vh;overflow:auto;border-radius:28px;padding:40px;box-shadow:0 30px 80px #0005}.close{position:absolute;right:18px;top:10px;border:0;background:none;font-size:30px;color:#65283e;cursor:pointer}.letter h3{font-size:30px;font-weight:500}.letter p{font-size:18px;line-height:1.85;white-space:pre-line}.sig{font-style:italic;font-size:19px;margin-top:25px}
+.final{text-align:center;padding:60px 20px 100px}.final h2{font-size:clamp(34px,7vw,52px);font-weight:500}.final p{font-size:20px;line-height:1.8}
+footer{text-align:center;padding:25px;font:11px Arial;color:#9b6576}.music{position:fixed;right:16px;bottom:16px;z-index:20;border:0;background:white;color:#65283e;padding:12px 17px;border-radius:999px;box-shadow:0 8px 25px #0002;cursor:pointer}
+.heart{position:fixed;bottom:-30px;opacity:.3;animation:up 9s linear infinite;pointer-events:none}@keyframes up{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:600px){.hero img{height:390px}.letter{padding:32px 23px}.letter p{font-size:16px}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<header><div class="tag">A little piece of my heart</div><h1>For Babdiii ❤️</h1><div class="sub">From your Babbduu</div></header>
+<section class="hero">
+<img src="babdiii-photo.png" alt="Babdiii">
+<div class="quote">“I couldn't put everything I feel into one letter…<br>so I made you 15.”</div>
+<button class="btn" onclick="document.getElementById('letters').scrollIntoView({behavior:'smooth'})">Open my heart 💌</button>
+</section>
+<section class="section" id="letters"><h2>Open these when the moment feels right 💕</h2><div class="grid" id="grid"></div></section>
+<section class="final"><h2>You opened every little piece of my heart. ❤️</h2><p>These letters may run out, but my reasons for loving you never will.</p><p>Thank you for being you, Babdiii.</p><p><b>Forever yours,<br>Babbduu 🫶</b></p></section>
+<footer>Made with love, just for Babdiii.</footer>
+<div class="modal" id="modal"><div class="letter"><button class="close" onclick="closeLetter()">×</button><div id="content"></div></div></div>
+<button class="music" onclick="musicHelp()">🎵 Unnukkulane</button>
+<script>
+const L=[
+["💕","Open when you miss me",`My love,
+
+If you're reading this, I guess you miss me a little. Well, I want you to know that I miss you too. I wish I could be beside you right now, hold you close, and just stay there for a while.
+
+Until I can, close your eyes and imagine my arms around you.
+
+Distance may keep us apart for a moment, but it can never change how close you are to my heart.
+
+I love you. ❤️`],
+["😢","Open when you're feeling sad",`Hey love,
+
+I don't know what's making you sad right now, but I wish I could take it away.
+
+Please remember that you don't always have to be strong. It's okay to have bad days. It's okay to cry. Just don't forget that you have someone who cares about you more than you know.
+
+Take a deep breath, wipe those tears, and remember: tomorrow can be better.
+
+And whenever you need me, I'm here. Always. ❤️`],
+["😊","Open when you're having a great day",`Look at you being happy! 🥰
+
+I hope you're smiling that beautiful smile of yours right now.
+
+Whatever made today special, enjoy every second of it. You deserve days filled with happiness, laughter, and little moments that make your heart feel full.
+
+And just so you know, knowing that you're happy makes me happy too.
+
+Keep smiling, beautiful. ❤️`],
+["😡","Open when you're angry with me",`Okay... before you throw this letter away, hear me out. 😂
+
+If I'm the reason you're angry, I'm sorry. I might not always say or do the right thing, but hurting you is never what I want.
+
+Take your time. Be angry if you need to. But when you're ready, let's talk instead of letting one bad moment become something bigger.
+
+I love you more than my ego, and I'd rather fix things with you than win an argument.
+
+Now please come back to me. 🥺❤️`],
+["🫂","Open when you need a hug",`Come here.
+
+Imagine me pulling you into the biggest, warmest hug and not letting go for a while.
+
+No talking. No questions. Just you and me.
+
+I wish I could actually be there right now, but until then, let this letter be my little substitute hug.
+
+Everything will be okay.
+
+And remember, there's always a place in my arms that's meant just for you. ❤️`],
+["🌙","Open when you can't sleep",`Still awake?
+
+Put your phone down for a moment, close your eyes, and take a slow breath.
+
+Think about something that makes you happy. Maybe one of our memories. Maybe a place we'd like to visit. Maybe just us laughing together over something completely stupid.
+
+Now imagine me saying:
+
+“Goodnight, my love. Sleep peacefully. I'll see you in your dreams.” ❤️`],
+["💭","Open when you're overthinking",`Hey, stop. 🫶
+
+Whatever you're thinking about right now, take a breath.
+
+Not every thought deserves to be believed. Not every problem needs to be solved tonight. Sometimes your mind just needs a little rest.
+
+You are loved. You are important. You are enough.
+
+And if you're worrying about us, remember this: I'm here because I choose you, and I care about us.
+
+Now breathe. One thing at a time. ❤️`],
+["❤️","Open when you need to know how much I love you",`How much do I love you?
+
+More than I can properly put into words.
+
+I love your smile. I love your little habits. I love the way you make ordinary moments feel special.
+
+But more than anything, I love the person you are.
+
+You have become such an important part of my life, and I'm genuinely grateful that I get to call you mine.
+
+If you ever doubt how much you mean to me, read this again:
+
+I love you. I choose you. And I'm grateful for you. ❤️`],
+["🎂","Open on your birthday",`Happy Birthday, beautiful! ❤️
+
+Today is all about celebrating you, but I also want to celebrate the fact that somehow I got lucky enough to have you in my life.
+
+I hope this year brings you everything you've been wishing for—happiness, success, peace, adventures, and lots of reasons to smile.
+
+And selfishly, I hope I get to be part of many of those memories.
+
+Enjoy your day, birthday girl. You deserve the world. 🎂❤️`],
+["✈️","Open when we're far apart",`I hate that I can't just turn around and find you beside me.
+
+But maybe being apart will make us appreciate the moments together even more.
+
+Until we're together again, remember that you're still a huge part of my everyday thoughts.
+
+Every distance has an ending.
+
+So until then, count the days, keep smiling, and remember that somewhere out there, I'm thinking about you and waiting for the next time I get to see you.
+
+I miss you. ❤️`],
+["💪","Open when you need motivation",`Hey, you.
+
+I know sometimes things feel difficult. But I've seen how capable you are, and I know you can handle more than you think.
+
+Don't compare your journey to anyone else's.
+
+Take one small step. Then another.
+
+You don't have to have everything figured out today.
+
+I'm proud of you—not only when you succeed, but also when you keep going after things get hard.
+
+You've got this. And I'll be cheering for you. ❤️`],
+["💋","Open when you want a kiss",`Well...
+
+You opened the right letter. 😏
+
+Unfortunately, I'm not there to give you one right now.
+
+So here's your temporary replacement:
+
+💋
+
+Okay, fine. One isn't enough.
+
+💋💋💋
+
+Save the rest for when I see you.
+
+And when I finally do, I'm collecting all the kisses I owe you. ❤️`],
+["😂","Open when you need to laugh",`Okay, serious question:
+
+Why are you reading a letter when you could be watching something funny? 😂
+
+Remember all those stupid things we've laughed about that probably wouldn't make sense to anyone else?
+
+Those are some of my favorite memories.
+
+I love that we can be completely ridiculous together and still have the best time.
+
+So here's your mission:
+
+Smile.
+
+If you haven't smiled yet, imagine me trying to make you laugh and failing miserably.
+
+There. I knew you'd smile. 😂❤️`],
+["🫶","Open when you need reassurance",`My love,
+
+If you're reading this because you're scared, uncertain, or simply need to hear something reassuring, let me remind you:
+
+You matter to me.
+
+You are loved.
+
+You are not a burden.
+
+You don't have to be perfect for me to love you.
+
+And you don't have to pretend everything is okay when it isn't.
+
+Whatever happens, let's face things together, talk honestly, and keep choosing each other.
+
+You don't have to face everything alone. ❤️`],
+["💍","Open when you wonder about our future",`If you're wondering what our future looks like, I can't promise that I'll know exactly what every tomorrow will bring.
+
+But I know who I'd like beside me while we find out.
+
+You.
+
+I want more random conversations, more adventures, more laughter, more stupid arguments, more dates, more photographs, more memories, and more ordinary days together.
+
+I don't know exactly where life will take us.
+
+But if I get to keep walking through it with you, I'm excited to find out.
+
+Here's to our future—and all the beautiful memories we haven't made yet.
+
+I love you, and I hope this is only the beginning of our story. ❤️`]
+];
+let opened=new Set(),grid=document.getElementById("grid");
+L.forEach((x,i)=>{let d=document.createElement("div");d.className="card";d.innerHTML=`<div class="emoji">${x[0]}</div><div class="when">${x[1]}</div><div class="opened" id="o${i}"></div>`;d.onclick=()=>openLetter(i);grid.appendChild(d)});
+function openLetter(i){opened.add(i);document.getElementById("o"+i).textContent="OPENED ❤️";document.getElementById("content").innerHTML=`<h3>${L[i][0]} ${L[i][1]}</h3><p>${L[i][2]}</p><div class="sig">— Your Babbduu ❤️</div>`;document.getElementById("modal").classList.add("show");if(opened.size===15)document.querySelector(".final").style.display="block"}
+function closeLetter(){document.getElementById("modal").classList.remove("show")}
+function musicHelp(){alert("To add the song, place a legally obtained/owned audio file named music.mp3 beside index.html and connect it to an <audio> player.")}
+for(let i=0;i<18;i++){let h=document.createElement("span");h.className="heart";h.textContent=["❤","♡","✦"][i%3];h.style.left=Math.random()*100+"%";h.style.animationDelay=Math.random()*8+"s";h.style.fontSize=12+Math.random()*22+"px";document.getElementById("hearts").appendChild(h)}
+</script>
+</body></html>
