@@ -45,7 +45,7 @@ footer{text-align:center;padding:25px;font:11px Arial;color:#9b6576}.music{posit
 <section class="final"><h2>You opened every little piece of my heart. ❤️</h2><p>These letters may run out, but my reasons for loving you never will.</p><p>Thank you for being you, Babdiii.</p><p><b>Forever yours,<br>Babbduu 🫶</b></p></section>
 <footer>Made with love, just for Babdiii.</footer>
 <div class="modal" id="modal"><div class="letter"><button class="close" onclick="closeLetter()">×</button><div id="content"></div></div></div>
-<button class="music" onclick="musicHelp()">🎵 Unnukkulane</button>
+<button class="music" onclick="musicHelp()">🎵 Radhey Radhey</button>
 <script>
 const SECRET="babdiii";
 function unlock(){
@@ -249,7 +249,10 @@ let opened=new Set(),grid=document.getElementById("grid");
 L.forEach((x,i)=>{let d=document.createElement("div");d.className="card";d.innerHTML=`<div class="emoji">${x[0]}</div><div class="when">${x[1]}</div><div class="opened" id="o${i}"></div>`;d.onclick=()=>openLetter(i);grid.appendChild(d)});
 function openLetter(i){opened.add(i);document.getElementById("o"+i).textContent="OPENED ❤️";document.getElementById("content").innerHTML=`<h3>${L[i][0]} ${L[i][1]}</h3><p>${L[i][2]}</p><div class="sig">— Your Babbduu ❤️</div>`;document.getElementById("modal").classList.add("show");if(opened.size===15)document.querySelector(".final").style.display="block"}
 function closeLetter(){document.getElementById("modal").classList.remove("show")}
-function musicHelp(){alert("To add the song, place a legally obtained/owned audio file named music.mp3 beside index.html and connect it to an <audio> player.")}
+function musicHelp(){
+  const w = window.open('https://www.youtube.com/embed/RoeV_fmf98s?autoplay=1&loop=1&playlist=RoeV_fmf98s', '_blank', 'noopener,noreferrer');
+  if(!w) alert('Please allow pop-ups to play Radhey Radhey.');
+}
 for(let i=0;i<18;i++){let h=document.createElement("span");h.className="heart";h.textContent=["❤","♡","✦"][i%3];h.style.left=Math.random()*100+"%";h.style.animationDelay=Math.random()*8+"s";h.style.fontSize=12+Math.random()*22+"px";document.getElementById("hearts").appendChild(h)}
 </script>
 </body></html>
