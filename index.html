@@ -18,7 +18,60 @@ footer{text-align:center;padding:25px;font:11px Arial;color:#9b6576}.music{posit
 .heart{position:fixed;bottom:-30px;opacity:.3;animation:up 9s linear infinite;pointer-events:none}@keyframes up{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
 @media(max-width:600px){.hero img{height:390px}.letter{padding:32px 23px}.letter p{font-size:16px}}
 
-.gate{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at top,#fff7fa,#ffdfe9 55%,#f6c4d4);display:flex;align-items:center;justify-content:center;padding:22px}.gate.hide{display:none}.gatebox{width:min(520px,100%);background:#fffaf8;border:1px solid #ecc4d0;border-radius:32px;padding:42px 28px;text-align:center;box-shadow:0 30px 90px #65283e2b}.lock{font-size:48px}.gatebox h2{font-size:34px;font-weight:500;margin:14px 0 8px}.gatebox p{line-height:1.7;color:#805466}.question{font-style:italic;margin:20px 0}.answer{width:100%;padding:15px 18px;border:1px solid #dfb4c2;border-radius:16px;background:white;font-size:16px;outline:none;text-align:center}.answer:focus{box-shadow:0 0 0 3px #f1cbd7}.unlock{margin-top:14px}.error{height:22px;color:#a33f5e;font:13px Arial;margin-top:10px}.private-note{font:11px Arial;letter-spacing:.5px;color:#a87587;margin-top:18px}
+.gate{position:fixed;inset:0;z-index:99999;isolation:isolate;background:radial-gradient(circle at top,#fff7fa,#ffdfe9 55%,#f6c4d4);display:flex;align-items:center;justify-content:center;padding:22px}.gate.hide{display:none!important;visibility:hidden!important;pointer-events:none!important}.gatebox{position:relative;z-index:100000;width:min(520px,100%);background:#fffaf8;border:1px solid #ecc4d0;border-radius:32px;padding:42px 28px;text-align:center;box-shadow:0 30px 90px #65283e2b}.lock{font-size:48px}.gatebox h2{font-size:34px;font-weight:500;margin:14px 0 8px}.gatebox p{line-height:1.7;color:#805466}.question{font-style:italic;margin:20px 0}.answer{width:100%;padding:15px 18px;border:1px solid #dfb4c2;border-radius:16px;background:white;font-size:16px;outline:none;text-align:center}.answer:focus{box-shadow:0 0 0 3px #f1cbd7}.unlock{margin-top:14px}.error{height:22px;color:#a33f5e;font:13px Arial;margin-top:10px}.private-note{font:11px Arial;letter-spacing:.5px;color:#a87587;margin-top:18px}
+
+/* ✦ TIME-TRAVEL / BLOSSOM DREAM THEME ✦ */
+html{scroll-behavior:smooth}
+body{overflow-x:hidden;background:
+ radial-gradient(circle at 15% 10%,rgba(255,255,255,.95),transparent 28%),
+ radial-gradient(circle at 85% 20%,rgba(255,215,229,.8),transparent 30%),
+ linear-gradient(135deg,#fffaf6 0%,#ffeaf1 42%,#f7ddea 70%,#fff8f1 100%);
+ perspective:1400px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.32;background-image:radial-gradient(#b96f8a 1px,transparent 1px);background-size:38px 38px}
+.time-portal{width:min(980px,92vw);margin:8px auto 30px;padding:25px 22px 20px;position:relative;
+ transform-style:preserve-3d;perspective:1000px}
+.portal-card{position:relative;min-height:210px;border:1px solid rgba(255,255,255,.8);border-radius:38px;
+ background:linear-gradient(145deg,rgba(255,255,255,.76),rgba(255,232,240,.62));
+ box-shadow:0 30px 70px rgba(101,40,62,.14), inset 0 1px 0 #fff;overflow:hidden;
+ backdrop-filter:blur(12px);transform:rotateX(2deg);transition:transform .5s ease}
+.portal-card:hover{transform:rotateX(0) rotateY(-1deg) translateY(-4px)}
+.portal-ring{position:absolute;width:300px;height:300px;border-radius:50%;left:50%;top:50%;
+ transform:translate(-50%,-50%) translateZ(-20px);border:1px solid rgba(155,76,111,.2);
+ box-shadow:0 0 0 25px rgba(255,255,255,.08),0 0 90px rgba(190,112,151,.18);animation:spin 18s linear infinite}
+.portal-ring:before,.portal-ring:after{content:"";position:absolute;inset:18px;border-radius:50%;border:1px dashed rgba(155,76,111,.18)}
+.portal-ring:after{inset:42px;border-style:solid;opacity:.55}
+.portal-content{position:relative;z-index:2;text-align:center;padding:38px 20px}
+.portal-kicker{font:10px Arial;letter-spacing:4px;text-transform:uppercase;color:#a16b80}
+.portal-title{font-size:clamp(27px,5vw,46px);margin:10px 0 4px;font-weight:500}
+.portal-sub{font-style:italic;color:#7e5364}
+.clockline{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:17px;font:11px Arial;letter-spacing:1.5px;color:#a36c80}
+.clockline span{padding:7px 11px;border-radius:99px;background:#ffffff88;border:1px solid #fff}
+.timeline{max-width:1050px;margin:0 auto 50px;padding:0 20px;position:relative}
+.timeline-line{height:2px;background:linear-gradient(90deg,transparent,#d39bad,transparent);position:absolute;left:8%;right:8%;top:24px}
+.timeline-points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+.time-node{border:1px solid #e8c3cf;background:#ffffffa8;border-radius:22px;padding:17px 14px;text-align:center;
+ box-shadow:0 10px 30px rgba(101,40,62,.08);backdrop-filter:blur(8px);transition:.3s;cursor:pointer}
+.time-node:hover{transform:translateY(-7px) rotateX(5deg);box-shadow:0 18px 35px rgba(101,40,62,.13)}
+.time-node .dot{width:15px;height:15px;border-radius:50%;background:#a75d78;margin:-25px auto 11px;border:4px solid #fff}
+.time-node b{font-size:16px;font-weight:500}.time-node small{display:block;margin-top:6px;color:#966b79}
+.hero{position:relative}
+.hero img{transform:translateZ(30px);transition:transform .5s ease;animation:softFloat 5s ease-in-out infinite}
+.hero img:hover{transform:translateZ(55px) rotateY(3deg)}
+.card{transform-style:preserve-3d;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.65) 50%,transparent 75%);
+transform:translateX(-130%);transition:.7s;pointer-events:none}
+.card:hover:before{transform:translateX(130%)}
+.card:hover{transform:translateY(-9px) rotateX(5deg) rotateY(-3deg) scale(1.015);box-shadow:0 20px 40px rgba(101,40,62,.16)}
+.bloom{position:fixed;pointer-events:none;z-index:1;top:-30px;animation:petalFall linear infinite;opacity:.65}
+.bloom:nth-child(3n){font-size:18px}.bloom:nth-child(3n+1){font-size:13px}.bloom:nth-child(3n+2){font-size:22px}
+.final{position:relative;overflow:hidden}
+.final:before{content:"✦  ❀  ✦  ❀  ✦";display:block;letter-spacing:18px;color:#b77b91;font-size:22px;margin-bottom:18px}
+.music{backdrop-filter:blur(10px);background:#fff9;color:#65283e;border:1px solid #fff;box-shadow:0 12px 35px #65283e22}
+.music.playing{background:#65283e;color:white}
+@keyframes spin{to{transform:translate(-50%,-50%) translateZ(-20px) rotate(360deg)}}
+@keyframes softFloat{0%,100%{transform:translateY(0) translateZ(30px)}50%{transform:translateY(-9px) translateZ(38px)}}
+@keyframes petalFall{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}10%{opacity:.7}100%{transform:translate3d(80px,115vh,0) rotate(520deg);opacity:0}}
+@media(max-width:600px){.portal-card{min-height:190px;border-radius:30px}.portal-content{padding:30px 14px}.timeline-points{grid-template-columns:1fr}.timeline-line{display:none}.time-node .dot{margin:0 auto 9px}.clockline{gap:7px}.clockline span{padding:6px 8px}}
 </style>
 </head>
 <body><div class="gate" id="gate">
@@ -27,14 +80,37 @@ footer{text-align:center;padding:25px;font:11px Arial;color:#9b6576}.music{posit
     <h2>Just for you, Babdiii</h2>
     <p>This little corner of my heart is private. Before you come in, answer the question only <b>my Babdiii</b> would know. 🥹</p>
     <div class="question">What does Babbduu call you? ❤️</div>
-    <input class="answer" id="answer" type="password" autocomplete="off" placeholder="Your answer…" onkeydown="if(event.key==='Enter')unlock()">
-    <button class="btn unlock" onclick="unlock()">Unlock my heart 💌</button>
+    <input class="answer" id="answer" type="password" autocomplete="off" placeholder="Your answer…" >
+    <button class="btn unlock" id="unlockBtn" type="button">Unlock my heart 💌</button>
     <div class="error" id="error"></div>
     <div class="private-note">A tiny secret between Babbduu &amp; Babdiii ✨</div>
   </div>
 </div>
 
 <div id="hearts"></div>
+<div class="time-portal">
+  <div class="portal-card" id="portal">
+    <div class="portal-ring"></div>
+    <div class="portal-content">
+      <div class="portal-kicker">A little time machine made for two</div>
+      <div class="portal-title">If I could travel through time…</div>
+      <div class="portal-sub">I'd visit every beautiful moment with you — and still choose you in every future. ❤️</div>
+      <div class="clockline">
+        <span>PAST · memories</span><span>PRESENT · us</span><span>FUTURE · always</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="timeline">
+  <div class="timeline-line"></div>
+  <div class="timeline-points">
+    <div class="time-node" onclick="document.getElementById('letters').scrollIntoView({behavior:'smooth'})"><div class="dot"></div><b>⏳ Then</b><small>the moments worth keeping</small></div>
+    <div class="time-node" onclick="document.getElementById('letters').scrollIntoView({behavior:'smooth'})"><div class="dot"></div><b>🌸 Now</b><small>this little world is ours</small></div>
+    <div class="time-node" onclick="document.querySelector('.final').scrollIntoView({behavior:'smooth'})"><div class="dot"></div><b>✨ Always</b><small>the memories we haven't made</small></div>
+  </div>
+</div>
+<audio id="bgMusic" src="radhey-radhey.mp3" type="audio/mpeg" loop preload="auto"></audio>
+
 <header><div class="tag">A little piece of my heart</div><h1>For Babdiii ❤️</h1><div class="sub">From your Babbduu</div></header>
 <section class="hero">
 <img src="babdiii-photo.png" alt="Babdiii">
@@ -45,24 +121,28 @@ footer{text-align:center;padding:25px;font:11px Arial;color:#9b6576}.music{posit
 <section class="final"><h2>You opened every little piece of my heart. ❤️</h2><p>These letters may run out, but my reasons for loving you never will.</p><p>Thank you for being you, Babdiii.</p><p><b>Forever yours,<br>Babbduu 🫶</b></p></section>
 <footer>Made with love, just for Babdiii.</footer>
 <div class="modal" id="modal"><div class="letter"><button class="close" onclick="closeLetter()">×</button><div id="content"></div></div></div>
-<button class="music" onclick="musicHelp()">🎵 Radhey Radhey</button>
+<button class="music" id="musicBtn" onclick="toggleMusic()">🎵 Radhey Radhey</button>
 <script>
 const SECRET="babdiii";
+const gate=document.getElementById('gate');
+const answer=document.getElementById('answer');
+const unlockBtn=document.getElementById('unlockBtn');
 function unlock(){
-  const value=document.getElementById('answer').value.trim().toLowerCase();
+  const value=(answer.value||'').trim().toLowerCase();
   if(value===SECRET){
-    document.getElementById('gate').classList.add('hide');
+    gate.classList.add('hide');
     document.body.style.overflow='auto';
-    sessionStorage.setItem('babdiiiUnlocked','yes');
+    try{sessionStorage.setItem('babdiiiUnlocked','yes');}catch(e){}
+    startMusic();
   }else{
     document.getElementById('error').textContent='Hmm… that’s not quite it, my love. Try again ❤️';
-    document.getElementById('answer').select();
+    answer.focus(); answer.select();
   }
 }
-(function(){
-  document.body.style.overflow='hidden';
-  if(sessionStorage.getItem('babdiiiUnlocked')==='yes')document.getElementById('gate').classList.add('hide');
-})();
+unlockBtn.addEventListener('click',unlock);
+answer.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();unlock();}});
+document.body.style.overflow='hidden';
+try{if(sessionStorage.getItem('babdiiiUnlocked')==='yes'){gate.classList.add('hide');document.body.style.overflow='auto';}}catch(e){}
 
 const L=[
 ["💕","Open when you miss me",`My love,
@@ -249,10 +329,20 @@ let opened=new Set(),grid=document.getElementById("grid");
 L.forEach((x,i)=>{let d=document.createElement("div");d.className="card";d.innerHTML=`<div class="emoji">${x[0]}</div><div class="when">${x[1]}</div><div class="opened" id="o${i}"></div>`;d.onclick=()=>openLetter(i);grid.appendChild(d)});
 function openLetter(i){opened.add(i);document.getElementById("o"+i).textContent="OPENED ❤️";document.getElementById("content").innerHTML=`<h3>${L[i][0]} ${L[i][1]}</h3><p>${L[i][2]}</p><div class="sig">— Your Babbduu ❤️</div>`;document.getElementById("modal").classList.add("show");if(opened.size===15)document.querySelector(".final").style.display="block"}
 function closeLetter(){document.getElementById("modal").classList.remove("show")}
-function musicHelp(){
-  const w = window.open('https://www.youtube.com/embed/RoeV_fmf98s?autoplay=1&loop=1&playlist=RoeV_fmf98s', '_blank', 'noopener,noreferrer');
-  if(!w) alert('Please allow pop-ups to play Radhey Radhey.');
+const bgMusic=document.getElementById('bgMusic');
+const musicBtn=document.getElementById('musicBtn');
+function startMusic(){
+  bgMusic.volume=0.42;
+  bgMusic.play().then(()=>{musicBtn.classList.add('playing');musicBtn.textContent='⏸ Radhey Radhey';}).catch(()=>{});
 }
+function toggleMusic(){
+  if(bgMusic.paused){startMusic();}else{bgMusic.pause();musicBtn.classList.remove('playing');musicBtn.textContent='🎵 Radhey Radhey';}
+}
+bgMusic.addEventListener('ended',()=>{musicBtn.classList.remove('playing');musicBtn.textContent='🎵 Radhey Radhey';});
 for(let i=0;i<18;i++){let h=document.createElement("span");h.className="heart";h.textContent=["❤","♡","✦"][i%3];h.style.left=Math.random()*100+"%";h.style.animationDelay=Math.random()*8+"s";h.style.fontSize=12+Math.random()*22+"px";document.getElementById("hearts").appendChild(h)}
+for(let i=0;i<22;i++){let p=document.createElement('span');p.className='bloom';p.textContent=['🌸','❀','✿'][i%3];p.style.left=Math.random()*100+'%';p.style.animationDuration=(9+Math.random()*9)+'s';p.style.animationDelay=(Math.random()*10)+'s';document.body.appendChild(p)}
+const portal=document.getElementById('portal');
+document.addEventListener('mousemove',e=>{if(innerWidth<700)return;const x=(e.clientX/innerWidth-.5)*2,y=(e.clientY/innerHeight-.5)*2;portal.style.transform=`rotateX(${(-y*2).toFixed(2)}deg) rotateY(${(x*3).toFixed(2)}deg)`});
+
 </script>
 </body></html>
