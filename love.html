@@ -1,110 +1,31 @@
 <!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>For Babdiii ❤️</title><style>
-*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;color:#65283e;background:linear-gradient(145deg,#fff9f6,#ffe7ef);min-height:100vh}
-header{text-align:center;padding:48px 18px 18px}.tag{font:11px Arial;letter-spacing:4px;text-transform:uppercase;color:#9d6073}
-h1{font-size:clamp(44px,10vw,78px);font-weight:500;margin:12px 0 3px}.sub{font-style:italic;font-size:20px}
-.hero{text-align:center;padding:15px 20px 55px}.hero img{width:min(330px,78vw);height:420px;object-fit:cover;border-radius:170px 170px 28px 28px;border:7px solid white;box-shadow:0 25px 60px #65283e40}
-.quote{max-width:650px;margin:28px auto;font-size:21px;line-height:1.7}.btn{border:0;border-radius:999px;background:#65283e;color:white;padding:14px 25px;font-size:16px;cursor:pointer}
-.section{max-width:1050px;margin:auto;padding:0 20px 70px}.section h2{text-align:center;font-weight:500}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}.card{background:#fffafd;border:1px solid #e7bdca;border-radius:22px;padding:22px 15px;min-height:160px;text-align:center;display:flex;flex-direction:column;justify-content:center;cursor:pointer;transition:.25s;box-shadow:0 8px 25px #65283e12}.card:hover{transform:translateY(-7px)}.emoji{font-size:36px}.when{font-size:17px;margin-top:9px}.opened{font:10px Arial;letter-spacing:1px;color:#b07b8d;margin-top:9px}
-.modal{position:fixed;inset:0;background:#2f152299;display:none;align-items:center;justify-content:center;padding:18px;z-index:10}.modal.show{display:flex}.letter{position:relative;background:#fff9f6;width:min(700px,100%);max-height:88vh;overflow:auto;border-radius:28px;padding:40px;box-shadow:0 30px 80px #0005}.close{position:absolute;right:18px;top:10px;border:0;background:none;font-size:30px;color:#65283e;cursor:pointer}.letter h3{font-size:30px;font-weight:500}.letter p{font-size:18px;line-height:1.85;white-space:pre-line}.sig{font-style:italic;font-size:19px;margin-top:25px}
-.final{text-align:center;padding:60px 20px 100px}.final h2{font-size:clamp(34px,7vw,52px);font-weight:500}.final p{font-size:20px;line-height:1.8}
-footer{text-align:center;padding:25px;font:11px Arial;color:#9b6576}.music{position:fixed;right:16px;bottom:16px;z-index:20;border:0;background:white;color:#65283e;padding:12px 17px;border-radius:999px;box-shadow:0 8px 25px #0002;cursor:pointer}
-.heart{position:fixed;bottom:-30px;opacity:.3;animation:up 9s linear infinite;pointer-events:none}@keyframes up{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
-@media(max-width:600px){.hero img{height:390px}.letter{padding:32px 23px}.letter p{font-size:16px}}
-
-
-
-/* ✦ TIME-TRAVEL / BLOSSOM DREAM THEME ✦ */
-html{scroll-behavior:smooth}
-body{overflow-x:hidden;background:
- radial-gradient(circle at 15% 10%,rgba(255,255,255,.95),transparent 28%),
- radial-gradient(circle at 85% 20%,rgba(255,215,229,.8),transparent 30%),
- linear-gradient(135deg,#fffaf6 0%,#ffeaf1 42%,#f7ddea 70%,#fff8f1 100%);
- perspective:1400px}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.32;background-image:radial-gradient(#b96f8a 1px,transparent 1px);background-size:38px 38px}
-.time-portal{width:min(980px,92vw);margin:8px auto 30px;padding:25px 22px 20px;position:relative;
- transform-style:preserve-3d;perspective:1000px}
-.portal-card{position:relative;min-height:210px;border:1px solid rgba(255,255,255,.8);border-radius:38px;
- background:linear-gradient(145deg,rgba(255,255,255,.76),rgba(255,232,240,.62));
- box-shadow:0 30px 70px rgba(101,40,62,.14), inset 0 1px 0 #fff;overflow:hidden;
- backdrop-filter:blur(12px);transform:rotateX(2deg);transition:transform .5s ease}
-.portal-card:hover{transform:rotateX(0) rotateY(-1deg) translateY(-4px)}
-.portal-ring{position:absolute;width:300px;height:300px;border-radius:50%;left:50%;top:50%;
- transform:translate(-50%,-50%) translateZ(-20px);border:1px solid rgba(155,76,111,.2);
- box-shadow:0 0 0 25px rgba(255,255,255,.08),0 0 90px rgba(190,112,151,.18);animation:spin 18s linear infinite}
-.portal-ring:before,.portal-ring:after{content:"";position:absolute;inset:18px;border-radius:50%;border:1px dashed rgba(155,76,111,.18)}
-.portal-ring:after{inset:42px;border-style:solid;opacity:.55}
-.portal-content{position:relative;z-index:2;text-align:center;padding:38px 20px}
-.portal-kicker{font:10px Arial;letter-spacing:4px;text-transform:uppercase;color:#a16b80}
-.portal-title{font-size:clamp(27px,5vw,46px);margin:10px 0 4px;font-weight:500}
-.portal-sub{font-style:italic;color:#7e5364}
-.clockline{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:17px;font:11px Arial;letter-spacing:1.5px;color:#a36c80}
-.clockline span{padding:7px 11px;border-radius:99px;background:#ffffff88;border:1px solid #fff}
-.timeline{max-width:1050px;margin:0 auto 50px;padding:0 20px;position:relative}
-.timeline-line{height:2px;background:linear-gradient(90deg,transparent,#d39bad,transparent);position:absolute;left:8%;right:8%;top:24px}
-.timeline-points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
-.time-node{border:1px solid #e8c3cf;background:#ffffffa8;border-radius:22px;padding:17px 14px;text-align:center;
- box-shadow:0 10px 30px rgba(101,40,62,.08);backdrop-filter:blur(8px);transition:.3s;cursor:pointer}
-.time-node:hover{transform:translateY(-7px) rotateX(5deg);box-shadow:0 18px 35px rgba(101,40,62,.13)}
-.time-node .dot{width:15px;height:15px;border-radius:50%;background:#a75d78;margin:-25px auto 11px;border:4px solid #fff}
-.time-node b{font-size:16px;font-weight:500}.time-node small{display:block;margin-top:6px;color:#966b79}
-.hero{position:relative}
-.hero img{transform:translateZ(30px);transition:transform .5s ease;animation:softFloat 5s ease-in-out infinite}
-.hero img:hover{transform:translateZ(55px) rotateY(3deg)}
-.card{transform-style:preserve-3d;position:relative;overflow:hidden}
-.card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,rgba(255,255,255,.65) 50%,transparent 75%);
-transform:translateX(-130%);transition:.7s;pointer-events:none}
-.card:hover:before{transform:translateX(130%)}
-.card:hover{transform:translateY(-9px) rotateX(5deg) rotateY(-3deg) scale(1.015);box-shadow:0 20px 40px rgba(101,40,62,.16)}
-.bloom{position:fixed;pointer-events:none;z-index:1;top:-30px;animation:petalFall linear infinite;opacity:.65}
-.bloom:nth-child(3n){font-size:18px}.bloom:nth-child(3n+1){font-size:13px}.bloom:nth-child(3n+2){font-size:22px}
-.final{position:relative;overflow:hidden}
-.final:before{content:"✦  ❀  ✦  ❀  ✦";display:block;letter-spacing:18px;color:#b77b91;font-size:22px;margin-bottom:18px}
-.music{backdrop-filter:blur(10px);background:#fff9;color:#65283e;border:1px solid #fff;box-shadow:0 12px 35px #65283e22}
-.music.playing{background:#65283e;color:white}
-@keyframes spin{to{transform:translate(-50%,-50%) translateZ(-20px) rotate(360deg)}}
-@keyframes softFloat{0%,100%{transform:translateY(0) translateZ(30px)}50%{transform:translateY(-9px) translateZ(38px)}}
-@keyframes petalFall{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}10%{opacity:.7}100%{transform:translate3d(80px,115vh,0) rotate(520deg);opacity:0}}
-@media(max-width:600px){.portal-card{min-height:190px;border-radius:30px}.portal-content{padding:30px 14px}.timeline-points{grid-template-columns:1fr}.timeline-line{display:none}.time-node .dot{margin:0 auto 9px}.clockline{gap:7px}.clockline span{padding:6px 8px}}
-</style></head>
-<body><div id="hearts"></div>
-<div class="time-portal">
-  <div class="portal-card" id="portal">
-    <div class="portal-ring"></div>
-    <div class="portal-content">
-      <div class="portal-kicker">A little time machine made for two</div>
-      <div class="portal-title">If I could travel through time…</div>
-      <div class="portal-sub">I'd visit every beautiful moment with you — and still choose you in every future. ❤️</div>
-      <div class="clockline">
-        <span>PAST · memories</span><span>PRESENT · us</span><span>FUTURE · always</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="timeline">
-  <div class="timeline-line"></div>
-  <div class="timeline-points">
-    <div class="time-node" onclick="document.getElementById('letters').scrollIntoView({behavior:'smooth'})"><div class="dot"></div><b>⏳ Then</b><small>the moments worth keeping</small></div>
-    <div class="time-node" onclick="document.getElementById('letters').scrollIntoView({behavior:'smooth'})"><div class="dot"></div><b>🌸 Now</b><small>this little world is ours</small></div>
-    <div class="time-node" onclick="document.querySelector('.final').scrollIntoView({behavior:'smooth'})"><div class="dot"></div><b>✨ Always</b><small>the memories we haven't made</small></div>
-  </div>
-</div>
-<audio id="bgMusic" src="radhey-radhey.mp3" type="audio/mpeg" loop preload="auto"></audio>
-
-<header><div class="tag">A little piece of my heart</div><h1>For Babdiii ❤️</h1><div class="sub">From your Babbduu</div></header>
-<section class="hero">
-<img src="babdiii-photo.png" alt="Babdiii">
-<div class="quote">“I couldn't put everything I feel into one letter…<br>so I made you 15.”</div>
-<button class="btn" onclick="document.getElementById('letters').scrollIntoView({behavior:'smooth'})">Open my heart 💌</button>
-</section>
-<section class="section" id="letters"><h2>Open these when the moment feels right 💕</h2><div class="grid" id="grid"></div></section>
-<section class="final"><h2>You opened every little piece of my heart. ❤️</h2><p>These letters may run out, but my reasons for loving you never will.</p><p>Thank you for being you, Babdiii.</p><p><b>Forever yours,<br>Babbduu 🫶</b></p></section>
-<footer>Made with love, just for Babdiii.</footer>
-<div class="modal" id="modal"><div class="letter"><button class="close" onclick="closeLetter()">×</button><div id="content"></div></div></div>
-<button class="music" id="musicBtn" onclick="toggleMusic()">🎵 Radhey Radhey</button>
-<script>const L=[
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#070517"><title>Our Little Universe — Babdiii ❤️</title>
+<style>
+*{box-sizing:border-box}:root{--ink:#fff7fb;--muted:#c9b9d4;--pink:#ff8fc8;--rose:#ff5fa9;--violet:#9e8cff;--glass:rgba(18,12,39,.72)}html{scroll-behavior:smooth}body{margin:0;background:#05030e;color:var(--ink);font-family:Georgia,serif;overflow-x:hidden}button{font:inherit}#space{position:fixed;inset:0;z-index:0;width:100%;height:100%;background:radial-gradient(circle at 50% 45%,#1b0d35 0,#09051b 38%,#03020a 100%)}#grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.12;background-image:radial-gradient(#fff 0.6px,transparent .7px);background-size:4px 4px;mix-blend-mode:screen}
+.screen{position:relative;z-index:2;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;transition:opacity .7s,transform .7s}.screen.hidden{opacity:0;pointer-events:none;transform:scale(1.04)}#intro{position:fixed;inset:0;background:rgba(3,2,10,.18)}.intro-card{width:min(760px,94vw);text-align:center;padding:48px 24px;border:1px solid rgba(255,255,255,.14);border-radius:36px;background:linear-gradient(145deg,rgba(27,15,57,.82),rgba(8,5,22,.62));box-shadow:0 30px 100px #0009;backdrop-filter:blur(14px)}.eyebrow{font:10px Arial;letter-spacing:4px;text-transform:uppercase;color:#d7b9eb}h1{font-size:clamp(42px,9vw,82px);font-weight:500;line-height:.98;margin:15px 0 12px}.intro-card p{font-size:clamp(17px,3vw,22px);line-height:1.7;color:var(--muted);max-width:620px;margin:0 auto 25px}.accent{color:#ffd1e9}.primary,.ghost{border:0;border-radius:999px;padding:14px 23px;cursor:pointer;transition:.25s}.primary{color:#1d0820;background:linear-gradient(135deg,#ffd2e8,#ff8fc8);box-shadow:0 12px 35px #ff6ab755;font-weight:700}.primary:hover{transform:translateY(-3px) scale(1.02)}.tiny{margin-top:15px;font:11px Arial;color:#9d8baa;letter-spacing:.8px}
+#universe{display:none;min-height:100vh;position:relative;z-index:3;padding:30px 18px 80px}#universe.active{display:block}.topbar{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;position:sticky;top:12px;z-index:8}.pill{border:1px solid #fff2;background:#0d0820cc;color:#e8d9ef;border-radius:999px;padding:10px 14px;font:11px Arial;backdrop-filter:blur(12px)}.music{cursor:pointer}.hero{max-width:1050px;margin:80px auto 50px;text-align:center}.hero h2{font-size:clamp(40px,8vw,74px);font-weight:500;margin:10px 0}.hero-photo{width:min(230px,60vw);height:230px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,.8);box-shadow:0 0 35px rgba(255,120,190,.35),0 25px 70px #0008;animation:photoFloat 5s ease-in-out infinite;margin:20px auto 25px;display:block}.hero .sub{font-size:clamp(17px,3vw,22px);color:var(--muted);font-style:italic;line-height:1.7}.travel-btn{margin-top:22px}
+.universe-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.world{position:relative;min-height:210px;padding:26px;border:1px solid #fff2;border-radius:30px;background:linear-gradient(145deg,#15102ccf,#090617cc);box-shadow:0 20px 55px #0006;overflow:hidden;cursor:pointer;transform-style:preserve-3d;transition:.35s}.world:hover{transform:translateY(-8px) rotateX(3deg)}.world:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-65px;top:-65px;background:radial-gradient(circle,#ff9dcc55,transparent 65%);filter:blur(4px)}.world .icon{font-size:42px}.world h3{font-size:28px;font-weight:500;margin:13px 0 5px}.world p{color:#bcaec9;line-height:1.6;margin:0}.world small{display:block;color:#eab4d4;margin-top:18px;font:11px Arial;letter-spacing:1.2px}
+.letters-wrap{max-width:1120px;margin:80px auto 0}.section-title{text-align:center;margin-bottom:25px}.section-title h3{font-size:38px;font-weight:500;margin:8px}.section-title p{color:#a99bb7}.orbit{position:relative;min-height:610px;border-radius:40px;border:1px solid #fff2;background:radial-gradient(circle at center,#24104499,#0a0618cc 48%,#07040fdd);box-shadow:inset 0 0 100px #0008,0 25px 80px #0006;overflow:hidden;perspective:1200px}.orbit-ring{position:absolute;left:50%;top:50%;border:1px solid #ffb7de2b;border-radius:50%;transform:translate(-50%,-50%) rotateX(65deg);pointer-events:none}.r1{width:410px;height:410px}.r2{width:620px;height:300px;transform:translate(-50%,-50%) rotateX(68deg) rotateY(15deg)}.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:105px;height:105px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#fff,#ffc5e7 18%,#ff70b9 43%,#8b3fff 72%,transparent 73%);box-shadow:0 0 35px #ff7bc6,0 0 110px #9d55ff88;z-index:2;font-size:38px;animation:pulse 2.8s ease-in-out infinite}@keyframes photoFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}@keyframes pulse{50%{transform:translate(-50%,-50%) scale(1.12)}}.envelope{position:absolute;left:50%;top:50%;width:145px;min-height:92px;margin:-46px 0 0 -72px;border:1px solid #fff3;border-radius:18px;background:linear-gradient(145deg,#21143dd9,#0e091dcc);color:#fff;cursor:pointer;padding:14px 10px;text-align:center;box-shadow:0 14px 30px #0007;transform:rotate(var(--rot)) translateY(var(--radius)) rotate(calc(var(--rot) * -1));transition:.3s;z-index:3}.envelope:hover{filter:brightness(1.3);box-shadow:0 0 25px #ff8fc855}.envelope .eicon{font-size:30px}.envelope b{display:block;font-size:12px;line-height:1.25;margin-top:5px}.envelope span{display:block;font:9px Arial;color:#ad9bb8;margin-top:4px}.envelope.opened{border-color:#ff9dce77;background:#21152fe8}.envelope.opened:after{content:"✓";position:absolute;right:8px;top:6px;color:#8dffcc;font:bold 12px Arial}.orbit-hint{position:absolute;bottom:17px;left:0;right:0;text-align:center;color:#887a96;font:10px Arial;letter-spacing:1px}
+.modal{position:fixed;inset:0;z-index:20;background:#02010acc;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.letter{position:relative;width:min(720px,100%);max-height:88vh;overflow:auto;border:1px solid #fff2;border-radius:30px;padding:38px 30px;background:linear-gradient(145deg,#fffafc,#f7eaf2);color:#52243b;box-shadow:0 30px 100px #0009}.letter h3{font-size:30px;font-weight:500;margin:5px 35px 20px 0}.letter p{font-size:18px;line-height:1.85;white-space:pre-line}.sig{font-style:italic;font-size:18px;margin-top:25px}.close{position:absolute;right:15px;top:8px;border:0;background:none;color:#52243b;font-size:32px;cursor:pointer}
+#final{max-width:950px;margin:90px auto 0;text-align:center;padding:60px 20px 20px;display:none}#final.show{display:block}#final h2{font-size:clamp(38px,7vw,68px);font-weight:500;line-height:1.05;margin:12px}#final p{color:#c7b8d0;font-size:19px;line-height:1.8}.constellation{height:220px;position:relative;margin:20px auto;max-width:600px}.constellation i{position:absolute;width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff;animation:twinkle 2s infinite alternate}.constellation:before{content:"❤";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:80px;color:#ff79bd;filter:drop-shadow(0 0 22px #ff79bd)}@keyframes twinkle{to{opacity:.25;transform:scale(.55)}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);opacity:0;z-index:30;background:#120b24ee;border:1px solid #fff2;border-radius:999px;padding:12px 18px;font:12px Arial;color:#f8eaf6;transition:.35s;pointer-events:none}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:800px){.universe-grid{grid-template-columns:1fr}.orbit{min-height:700px}.envelope{width:125px;margin-left:-62px}.r1{width:350px;height:350px}.r2{width:520px;height:260px}.topbar{top:7px}}@media(max-width:520px){#universe{padding:18px 12px 60px}.hero{margin-top:70px}.orbit{min-height:680px;border-radius:28px}.envelope{width:112px;min-height:86px;margin-left:-56px;padding:9px 6px}.envelope .eicon{font-size:25px}.envelope b{font-size:10px}.envelope span{font-size:8px}.r1{width:285px;height:285px}.r2{width:410px;height:210px}.core{width:85px;height:85px;font-size:30px}.letter{padding:32px 22px}.letter p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style></head><body>
+<canvas id="space" aria-hidden="true"></canvas><div id="grain"></div>
+<section id="intro" class="screen"><div class="intro-card"><div class="eyebrow">ACCESS GRANTED · BABBduu → BABDIII</div><h1>Welcome to <span class="accent">Our Little Universe</span> ✨</h1><p>A tiny galaxy made for two. Every star is a moment, every orbit is a memory, and every timeline somehow leads back to <span class="accent">you</span>.</p><button class="primary" id="enterBtn">Enter our universe ✨</button><div class="tiny">Turn on the music when you're ready · “Radhey Radhey” 🎵</div></div></section>
+<main id="universe">
+<div class="topbar"><div class="pill">🌌 Babbduu × Babdiii · OUR UNIVERSE</div><button class="pill music" id="musicBtn">🎵 Radhey Radhey</button></div>
+<section class="hero"><div class="eyebrow">A little time machine made for two</div><img class="hero-photo" src="babdiii-photo.png" alt="A special photo for Babdiii"><h2>Where every timeline leads back to you. ❤️</h2><div class="sub">If I could travel through time, I'd visit every beautiful moment with you — and still choose you in every future.</div><button class="primary travel-btn" id="travelBtn">🕰️ Travel through time</button></section>
+<section class="universe-grid"><article class="world" data-scroll="letters"><div class="icon">⏳</div><h3>PAST</h3><p>The moments worth keeping — the little memories that made “us” feel real.</p><small>ENTER THE MEMORIES →</small></article><article class="world" data-scroll="letters"><div class="icon">🌸</div><h3>PRESENT</h3><p>This little world is ours, right now. Pause here and enjoy it.</p><small>OPEN MY HEART →</small></article><article class="world" data-scroll="final"><div class="icon">✨</div><h3>FUTURE</h3><p>The memories we haven't made yet. The places we haven't seen. The story still unfolding.</p><small>SEE WHAT'S AHEAD →</small></article></section>
+<section class="letters-wrap" id="letters"><div class="section-title"><div class="eyebrow">15 little portals</div><h3>Choose a letter from our orbit 💌</h3><p>Tap any floating envelope. After you read it, it becomes a memory you unlocked.</p></div><div class="orbit" id="orbit"><div class="orbit-ring r1"></div><div class="orbit-ring r2"></div><div class="core">❤️</div><div class="orbit-hint">DRAG / SWIPE THE GALAXY · TAP AN ENVELOPE TO OPEN IT</div></div></section>
+<section id="final"><div class="eyebrow">CONSTELLATION COMPLETE</div><div class="constellation" id="constellation"></div><h2>Out of every possible timeline…<br><span class="accent">I'd still find you.</span></h2><p>I'd still choose you. In every universe. In every version of our story. ❤️</p><p><b>Forever yours,<br>Babbduu 🫶</b></p></section>
+</main>
+<div class="modal" id="modal"><div class="letter"><button class="close" id="closeBtn" aria-label="Close">×</button><div id="content"></div></div></div><div class="toast" id="toast"></div>
+<audio id="bgMusic" src="radhey-radhey.mp3" loop preload="auto"></audio>
+<script>
+'use strict';
+const L=[
 ["💕","Open when you miss me",`My love,
 
 If you're reading this, I guess you miss me a little. Well, I want you to know that I miss you too. I wish I could be beside you right now, hold you close, and just stay there for a while.
@@ -285,30 +206,25 @@ Here's to our future—and all the beautiful memories we haven't made yet.
 
 I love you, and I hope this is only the beginning of our story. ❤️`]
 ];
-const bgMusic=document.getElementById('bgMusic');
-const musicBtn=document.getElementById('musicBtn');
-function startMusic(){
-  if(!bgMusic)return;
-  bgMusic.volume=0.42;
-  const p=bgMusic.play();
-  if(p&&p.then)p.then(()=>{musicBtn.classList.add('playing');musicBtn.textContent='⏸ Radhey Radhey';}).catch(()=>{});
-}
-function toggleMusic(){
-  if(!bgMusic)return;
-  if(bgMusic.paused)startMusic();
-  else{bgMusic.pause();musicBtn.classList.remove('playing');musicBtn.textContent='🎵 Radhey Radhey';}
-}
-bgMusic.addEventListener('ended',()=>{musicBtn.classList.remove('playing');musicBtn.textContent='🎵 Radhey Radhey';});
-
-let opened=new Set(),grid=document.getElementById("grid");
-L.forEach((x,i)=>{let d=document.createElement("div");d.className="card";d.innerHTML=`<div class="emoji">${x[0]}</div><div class="when">${x[1]}</div><div class="opened" id="o${i}"></div>`;d.onclick=()=>openLetter(i);grid.appendChild(d)});
-function openLetter(i){opened.add(i);document.getElementById("o"+i).textContent="OPENED ❤️";document.getElementById("content").innerHTML=`<h3>${L[i][0]} ${L[i][1]}</h3><p>${L[i][2]}</p><div class="sig">— Your Babbduu ❤️</div>`;document.getElementById("modal").classList.add("show");if(opened.size===15)document.querySelector(".final").style.display="block"}
-function closeLetter(){document.getElementById("modal").classList.remove("show")}
-
-for(let i=0;i<18;i++){let h=document.createElement("span");h.className="heart";h.textContent=["❤","♡","✦"][i%3];h.style.left=Math.random()*100+"%";h.style.animationDelay=Math.random()*8+"s";h.style.fontSize=12+Math.random()*22+"px";document.getElementById("hearts").appendChild(h)}
-for(let i=0;i<22;i++){let p=document.createElement('span');p.className='bloom';p.textContent=['🌸','❀','✿'][i%3];p.style.left=Math.random()*100+'%';p.style.animationDuration=(9+Math.random()*9)+'s';p.style.animationDelay=(Math.random()*10)+'s';document.body.appendChild(p)}
-const portal=document.getElementById('portal');
-document.addEventListener('mousemove',e=>{if(innerWidth<700)return;const x=(e.clientX/innerWidth-.5)*2,y=(e.clientY/innerHeight-.5)*2;portal.style.transform=`rotateX(${(-y*2).toFixed(2)}deg) rotateY(${(x*3).toFixed(2)}deg)`});
-
-</script></body>
-</html>
+const qs=s=>document.querySelector(s), intro=qs('#intro'), universe=qs('#universe'), enterBtn=qs('#enterBtn'), travelBtn=qs('#travelBtn'), orbit=qs('#orbit'), modal=qs('#modal'), content=qs('#content'), toast=qs('#toast'), music=qs('#bgMusic'), musicBtn=qs('#musicBtn');
+const opened=new Set();
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),2200)}
+function startMusic(){music.volume=.42;const p=music.play();if(p&&p.then)p.then(()=>{musicBtn.textContent='⏸ Radhey Radhey';musicBtn.classList.add('playing')}).catch(()=>showToast('Tap the music button to start 🎵'))}
+function toggleMusic(){if(music.paused)startMusic();else{music.pause();musicBtn.textContent='🎵 Radhey Radhey';musicBtn.classList.remove('playing')}}
+musicBtn.addEventListener('click',toggleMusic);
+function enterUniverse(){intro.classList.add('hidden');setTimeout(()=>{intro.style.display='none';universe.classList.add('active');window.scrollTo(0,0);showToast('Universe initialized ✨')} ,650)}
+enterBtn.addEventListener('click',()=>{enterUniverse();startMusic()});
+travelBtn.addEventListener('click',()=>{window.scrollTo({top:document.querySelector('.universe-grid').offsetTop-20,behavior:'smooth'});showToast('Choose a timeline 🌌')});
+document.querySelectorAll('.world').forEach(w=>w.addEventListener('click',()=>document.getElementById(w.dataset.scroll).scrollIntoView({behavior:'smooth'})));
+function openLetter(i){opened.add(i);const e=qs('#env'+i);if(e)e.classList.add('opened');content.innerHTML='<h3>'+L[i][0]+' '+L[i][1]+'</h3><p>'+L[i][2]+'</p><div class="sig">— Your Babbduu ❤️</div>';modal.classList.add('show');if(opened.size===15){qs('#final').classList.add('show');buildConstellation();showToast('All 15 memories unlocked ✨')}}
+function closeLetter(){modal.classList.remove('show')}
+qs('#closeBtn').addEventListener('click',closeLetter);modal.addEventListener('click',e=>{if(e.target===modal)closeLetter()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLetter()});
+const N=L.length;for(let i=0;i<N;i++){const a=i*24,rad=170+(i%3)*55;const d=document.createElement('button');d.className='envelope';d.id='env'+i;d.style.setProperty('--rot',a+'deg');d.style.setProperty('--radius',rad+'px');d.innerHTML='<div class="eicon">'+L[i][0]+'</div><b>'+L[i][1].replace('Open when ','')+'</b><span>tap to unlock</span>';d.addEventListener('click',()=>openLetter(i));orbit.appendChild(d)}
+// Touch / pointer drag gives the orbit a physical, interactive feel.
+let dragging=false,lastX=0,orbitAngle=0;function rotateOrbit(dx){orbitAngle+=dx*.45;orbit.style.transform='rotateY('+orbitAngle+'deg)'}orbit.addEventListener('pointerdown',e=>{if(e.target.closest('.envelope'))return;dragging=true;lastX=e.clientX;orbit.setPointerCapture(e.pointerId)});orbit.addEventListener('pointermove',e=>{if(!dragging)return;rotateOrbit(e.clientX-lastX);lastX=e.clientX});orbit.addEventListener('pointerup',()=>dragging=false);orbit.addEventListener('pointercancel',()=>dragging=false);
+function buildConstellation(){const c=qs('#constellation');if(c.dataset.built)return;c.dataset.built='1';for(let i=0;i<18;i++){const s=document.createElement('i');s.style.left=(15+Math.random()*70)+'%';s.style.top=(10+Math.random()*78)+'%';s.style.animationDelay=(Math.random()*2)+'s';c.appendChild(s)}}
+// Parallax starfield / galaxy canvas: lightweight, no external libraries.
+const canvas=qs('#space'),ctx=canvas.getContext('2d'),DPR=Math.min(devicePixelRatio||1,2);let W,H,stars=[],dust=[],mx=0,my=0,t=0;function resize(){W=innerWidth;H=innerHeight;canvas.width=W*DPR;canvas.height=H*DPR;canvas.style.width=W+'px';canvas.style.height=H+'px';ctx.setTransform(DPR,0,0,DPR,0,0);stars=[];dust=[];const count=Math.min(700,Math.floor(W*H/2200));for(let i=0;i<count;i++)stars.push({x:Math.random()*W,y:Math.random()*H,z:.15+Math.random()*.85,s:.4+Math.random()*1.8,p:Math.random()*6.28});for(let i=0;i<420;i++)dust.push({a:Math.random()*6.28,r:40+Math.random()*Math.min(W,H)*.48,z:.2+Math.random()*.8,s:.4+Math.random()*1.2})}
+function galaxy(){ctx.clearRect(0,0,W,H);const cx=W/2+mx*18,cy=H*.48+my*12;for(const q of stars){q.p+=.003*q.s;let x=q.x+mx*18*q.z,y=q.y+my*12*q.z;ctx.globalAlpha=.25+.65*q.z*(.6+.4*Math.sin(q.p));ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(x,y,q.s*q.z,0,6.28);ctx.fill()}for(const q of dust){q.a+=.0015*q.s;const arm=Math.sin(q.a*3.0)*.55;const rr=q.r*(.82+.18*Math.sin(t*.3+q.a));const ang=q.a+rr*.006+arm;const x=cx+Math.cos(ang)*rr,y=cy+Math.sin(ang)*rr*.46;ctx.globalAlpha=.05+.12*q.z;ctx.fillStyle=q.z>.65?'#ff8fc8':'#a58cff';ctx.beginPath();ctx.arc(x,y,q.s*q.z,0,6.28);ctx.fill()}ctx.globalAlpha=1;const g=ctx.createRadialGradient(cx,cy,0,cx,cy,120);g.addColorStop(0,'rgba(255,190,230,.22)');g.addColorStop(1,'rgba(150,100,255,0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,120,0,6.28);ctx.fill();t++;requestAnimationFrame(galaxy)}
+addEventListener('resize',resize);addEventListener('pointermove',e=>{mx=e.clientX/W-.5;my=e.clientY/H-.5});addEventListener('touchmove',e=>{const q=e.touches[0];mx=q.clientX/W-.5;my=q.clientY/H-.5},{passive:true});resize();galaxy();
+</script></body></html>
